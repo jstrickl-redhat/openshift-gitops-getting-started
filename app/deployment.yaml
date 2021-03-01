@@ -23,7 +23,7 @@ spec:
       containers:
       - name: spring-petclinic
         imagePullPolicy: Always
-        image: image-registry.openshift-image-registry.svc:5000/spring-petclinic/spring-petclinic-demo-git:latest
+        image: image-registry.openshift-image-registry.svc:5000/spring-petclinic/spring-petclinic-demo-git@sha256:2ad4b636ab4daa7e03fa058ef5ad775c0b18bd3cc686855ef9423cf07398c89d
         livenessProbe:
           failureThreshold: 3
           httpGet:
